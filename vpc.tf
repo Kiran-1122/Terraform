@@ -15,6 +15,15 @@ resource "aws_internet_gateway" "default" {
   }
 }
 
+resource "aws_vpc" "default2" {
+  cidr_block           = "10.5.0.0/16"
+  enable_dns_hostnames = true
+  tags = {
+    Name = "myvpc"
+    #Owner = "Kiran kona"
+    #environment = "${var.environment}"
+  }
+}
 #variable "vpc_cidr" {}
 #variable "vpc_name" {}
 #variable "IGW_name" {}
