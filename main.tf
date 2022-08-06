@@ -6,13 +6,13 @@ terraform {
       source  = "hashicorp/aws"
     }
   }
-  backend "s3" {
-    bucket = "janakis3bucket"
-    key    = "janakis3.tfstate"
-    region = "us-east-1"
-    dynamodb_table = "Kiran-terraform-state-lock-dynamo"
-    encrypt = true
-  }
+  #backend "s3" {
+  #  bucket = "janakis3bucket"
+  #  key    = "janakis3.tfstate"
+  #  region = "us-east-1"
+  #  dynamodb_table = "Kiran-terraform-state-lock-dynamo"
+  #  encrypt = true
+  #}
 
 }
 
